@@ -1,7 +1,7 @@
 /* Anton Font */
 @font-face {
     font-family: Anton;
-    src: url('resurse/fonts/anton.regular.ttf');
+    src: url('resurse/fonts/Anton-Regular.ttf');
 }
 
 /* Space Grotesk Font */
@@ -96,7 +96,7 @@ html {
         text-decoration: none;
     }
 
-    li a:hover {
+    .drop-li a:hover {
         cursor: pointer;
         color: var(--yellow);
     }
@@ -133,6 +133,7 @@ html {
     margin: 5em;
     height: 90vh;
     text-align: center;
+    padding-bottom: 5em;
 }
 
 
@@ -214,7 +215,6 @@ html {
     align-items: center;
     gap: 5em;
     justify-content: center;
-    height: auto;
     margin: 5em;
 }
 
@@ -278,8 +278,6 @@ html {
     background-color: #FED100;
 }
 
-/* Sursa scollbar: https://stackoverflow.com/questions/12337821/css3-scrollbar-styling-on-a-div */
-
 .nav-btn a {
     color: var(--white);
 }
@@ -313,6 +311,46 @@ html {
 
 .section-link a {
     color: var(--yellow);
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding-top: 5em;
+}
+
+.section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    margin: 5em;
+}
+
+section {
+    padding: 0 0 5em;
+}
+
+.section-3-left {
+    font-family: var(--regularFont);
+}
+
+.section-3-right p {
+    font-size: 20px;
+}
+
+.section-3-left img {
+    height: 300px;
+}
+
+.section-3-right {
+    width: 50%;
+    font-family: var(--regularFont);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .spacer {
@@ -386,7 +424,6 @@ a.underlined {
 }
 
 .copy-small {
-
     font-family: var(--regularFont);
     color: var(--secondaryGrey);
 }
@@ -403,12 +440,32 @@ a.underlined {
     font-family: var(--regularFont);
     font-size: 20px;
     color: var(--white);
+    padding: 0;
+    margin: 1em 0 .5em;
 }
 
 .footer-middle form {
     display: flex;
     align-items: center;
     gap: 1em;
+}
+
+.footer-middle address {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    padding: 1em 0 0;
+    font-style: normal;
+}
+
+.address-hover:hover {
+    color: var(--yellow);
+}
+
+.footer-middle address a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--regularFont);
 }
 
 #email-field {
@@ -434,9 +491,9 @@ a.underlined {
 }
 
 .footer-right {
-    border-left: 2px solid var(--white);
+    border-left: 1.8px solid var(--white);
     font-family: var(--regularFont);
-    font-size: 20px;
+    font-size: px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -452,6 +509,7 @@ a.underlined {
 
 .footer-nav ul li {
     cursor: pointer;
+    font-size: 18px;
 }
 
 .footer-nav ul li a {
@@ -484,14 +542,27 @@ a.underlined {
 }
 
 .moving-text {
-    height: 18em;
+    height: 3em;
     background-color: var(--yellow);
     display: flex;
     align-items: center;
-    justify-content: center;
+    overflow: hidden;
 }
 
 #endless-text {
     font-family: var(--regularFont);
     font-size: 20px;
+    white-space: nowrap;
+    padding-left: 0;
+    animation: scrollText 100s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }

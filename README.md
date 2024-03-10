@@ -1,2 +1,0 @@
-# Tehnici-Web
-Magazin auto
