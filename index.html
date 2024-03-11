@@ -12,7 +12,7 @@
     <title>Racebox</title>
 
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="./resurse/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./resurse/favicon/favicon-32x32.png">
@@ -28,7 +28,7 @@
 
 <body>
 
-    <button onclick="topFunction()" id="top-btn" title="Go to top">↑</button>
+    <button onclick="topFunction()" id="top-btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
     <header>
         <nav class="navbar">
@@ -39,9 +39,8 @@
                 <ul class="nav-ul">
                     <li class="nav-li underlined"><a href="index.html">Acasă</a>
                         <ul class="dropdown">
-                            <li class="drop-li"><a href="index.html">Servicii</a>
-                            <li class="drop-li"><a href="index.html">Categorii</a>
-                            <li class="drop-li"><a href="#footer-id">Info</a>
+                            <li class="drop-li"><a href="#servicii">Servicii</a>
+                            <li class="drop-li"><a href="#oferte">Oferte</a>
                             <li class="drop-li"><a href="#footer-id">Footer</a>
                         </ul>
                     </li>
@@ -89,7 +88,7 @@
             <section class="section-1-left">
                 <h3 class="section-title section-underlined">CUM PUTEM AJUTA</h3>
 
-                <p>La RaceBox, înțelegem că nevoile tale de vehicule sunt la fel de unice ca și tine.</p>
+                <p id="#servicii">La RaceBox, înțelegem că nevoile tale de vehicule sunt la fel de unice ca și tine.</p>
 
                 <p class="section-link"><a href="#">VEZI OFERTA NOASTRĂ</a></p>
             </section>
@@ -151,7 +150,7 @@
         </section>
 
 
-        <section class="section-3">
+        <section class="section-3" id="#oferte">
             <section class="section-3-left">
                 <figure>
                     <img src="resurse/imagini/name.jpg" alt="">

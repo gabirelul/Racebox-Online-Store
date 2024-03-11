@@ -487,6 +487,7 @@ a.underlined {
     cursor: pointer;
     color: var(--dark);
 }
+
 .footer-right {
     border-left: 1.8px solid var(--white);
     font-family: var(--regularFont);

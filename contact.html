@@ -2,17 +2,17 @@
 <html lang="ro">
 
 <head>
-    <meta charset="UTF-8"><!-- codificarea în memorie a caracterelor-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- va fi explicat când ajungem la CSS -->
-    <meta name="keywords" content="reprezentanta, masini, inchirieri, audi, mercedes, bmw, ">
-    <!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="BMW, Automobile, Performanta, Inovatie, Eleganta, Audi, Masini de lux, Tehnologie avansata, Confort, Porsche, Sportivitate, Design iconic, Performanta de varf, Exclusivitate, Lamborghini, Supercaruri, Viteza extrema, Design agresiv, Bucuresti, Romania, Sector 1 2 3 4 5 6, Reprezentanta">
     <meta name="description"
-        content="Contact, Adresa, Telefon, Email, Formular de contact, Harta, Sediu, Program de lucru, Audi, Porsche, Lamborghini, Asistenta clienti, Service, Intrebari frecvente, Suport, Feedback, Mesaj, Consultanta">
-    <!-- descrierea paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
+        content="Vanzari/inchirieri auto (Audi, Mercedes, BMW). Consultanta. Schimb cu masina veche. Livram si la domiciliu in Bucuresti.">
     <meta name="author" content="Alex Chera">
     <title>Racebox</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="./resurse/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./resurse/favicon/favicon-32x32.png">
@@ -30,24 +30,42 @@
 <body>
 
     <header>
-
         <nav class="navbar">
-
             <div class="nav-left">
-                <p class="nav-left-text">Racebox Bucuresti</p>
+                <a href="index.html" class="nav-left-btn">Racebox București</a>
             </div>
-
-            <ul class="nav-ul">
-                <li class="nav-li"><a href="index.html">Home</a></li>
-                <li class="nav-li"><a href="produse.html">Produse</a></li>
-                <li class="nav-li"><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="nav-right">
+                <ul class="nav-ul">
+                    <li class="nav-li underlined"><a href="index.html">Acasă</a>
+                        <ul class="dropdown">
+                            <li class="drop-li"><a href="index.html">Servicii</a>
+                            <li class="drop-li"><a href="index.html">Categorii</a>
+                            <li class="drop-li"><a href="#footer-id">Info</a>
+                            <li class="drop-li"><a href="#footer-id">Footer</a>
+                        </ul>
+                    </li>
+                    <li class="nav-li underlined"><a href="cumpara.html">Cumpără</a></li>
+                    <li class="nav-li underlined"><a href="inchirieri.html">Închiriază</a></li>
+                    <li class="nav-li underlined"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <div class="container">
-            <h1 class="text">Contact</h1>
+        <div class="section-0">
+            <div class="section-0-text">
+                <p class="section-text"><a class="underline-hover-effect">CONTACT</a></p>
+                <p class="section-text-under">Partener oficial Pirelli</p>
+                <div class="spacer"></div>
+                <button class="section-btn"><a href="contact.html">Vezi ofertele</a></button>
+
+            </div>
+            <div class="header-video">
+                <video autoplay muted loop>
+                    <source src="resurse/imagini/vid-2.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
     </main>
 
