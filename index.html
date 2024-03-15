@@ -11,8 +11,10 @@
     <meta name="author" content="Alex Chera">
     <title>Racebox</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="resurse/css/main.css">
+    <link rel="stylesheet" href="resurse/css/layout.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./resurse/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./resurse/favicon/favicon-32x32.png">
@@ -28,7 +30,9 @@
 
 <body>
 
-    <button onclick="topFunction()" id="top-btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <buttonid="top-btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <a href="#" id="link-top"><div id="triunghi"></div></a>
 
     <header>
         <nav class="navbar">
@@ -53,164 +57,182 @@
     </header>
 
     <main>
-        <div class="section-0">
-            <div class="section-0-text">
-                <p class="section-text">BUN VENIT LA<br><a class="underline-hover-effect">RACEBOX BUCUREȘTI</a></p>
-                <p class="section-text-under">Partener oficial Pirelli</p>
-                <div class="spacer"></div>
-                <button class="section-btn"><a href="contact.html">Vezi ofertele</a></button>
 
-            </div>
-            <div class="header-video">
-                <video autoplay muted loop>
-                    <source src="resurse/imagini/vid-2.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-
-        <!-- <div class="moving-text">
-            <div class="marquee-container">
-                <marquee id="endless-text" behavior="scroll" direction="left">ROMÂNIA | NORVEGIA | COREEA DE SUD | SPANIA | KENYA | ITALIA | CHILE | VIETNAM | SUEDIA | FRANȚA | ELVEȚIA | BRAZILIA | ARGENTINA | EGIPT
-                </marquee>
-            </div>
-        </div> -->
-        <!-- <div class="moving-text">
-            <div class="marquee-container">
-                <marquee id="endless-text" behavior="scroll" direction="left">RaceBox este un centru de service auto din
-                    București care oferă o gamă largă de servicii pentru întreținerea și repararea vehiculelor. RaceBox
-                    este un centru de service auto din
-                    București care oferă o gamă largă de servicii pentru întreținerea și repararea vehiculelor.
-                </marquee>
-            </div>
-        </div> -->
-
-        <section class="section-1">
-            <section class="section-1-left">
-                <h3 class="section-title section-underlined">CUM PUTEM AJUTA</h3>
-
-                <p id="#servicii">La RaceBox, înțelegem că nevoile tale de vehicule sunt la fel de unice ca și tine.</p>
-
-                <p class="section-link"><a href="#">VEZI OFERTA NOASTRĂ</a></p>
+        <div class="grid-pagina">
+            <section class="section-1">
+                <div class="section-1-left">
+                    <h2>Bine ați venit la Racebox - destinația online premium pentru pasionații auto!</h2>
+                    <p>Aici gasiti serviciile noastre:</p>
+                    <ul>
+                        <li>Cumpara <i class="fas fa-check"></i></li>
+                        <li>Inchiriaza <i class="fas fa-check"></i></li>
+                        <li>Vinde <i class="fas fa-check"></i></li>
+                    </ul>
+                </div>
+                <div class="section-1-img">
+                    <img src="./resurse/imagini/1.jpg">
+                </div>
             </section>
-            <section class="section-1-right">
-                <h3>Bine ați venit la <i>RaceBox</i>, dvs. de top pentru experiențe fără probleme în
-                    închirierea și achiziționarea de mașini.</h3>
-
-                <p>Fie că vă căutați <b>închiriere</b> pe termen scurt pentru o aventură de weekend sau intenționați să
-                    <b>achiziționați</b> mașina visurilor dvs, <i>Racebox</i> are soluția potrivită. Gama noastră
-                    extinsă
-                    de vehicule acoperă fiecare preferință și buget, de la mașini compacte la SUV-uri spațioase și
-                    mașini sport de performanță înaltă.
+            <section class="section-2">
+                <h2><strong>Ce ne deosebește?</strong></h2>
+                <p> <b>Produse Premium</b> <br> Colaborăm doar cu cele mai renumite mărci din industria auto pentru a vă
+                    asigura că fiecare produs pe care îl găsiți la Racebox este de cea mai înaltă calitate.</p>
+                <p> <b>Diversitatea Gamei</b> <br> De la piese de schimb și accesorii până la echipamente de performanță
+                    și
+                    <i>gadgeturi</i> auto, avem totul
+                    acoperit. Indiferent de marca sau modelul mașinii dvs., veți găsi cu siguranță ceea ce căutați.
                 </p>
-
-                <p>Cu <i>Racebox</i>, comoditatea este prioritară. Platforma noastră intuitivă vă permite să navigați cu
-                    ușurință prin gama noastră diversă de vehicule, să comparați prețurile și să vă rezervați sau
-                    achiziționați mașina cu doar câteva clicuri simple. Nu mai trebuie să suportați cozi lungi sau să
-                    navigați prin documentație plictisitoare cu <i>Racebox</i>, puteți finaliza tranzacția online, toate
-                    de la
-                    confortul propriei case.</p>
-
-                <p>Dar nu ne oprim doar la furnizarea de mașini excelente. Angajamentul nostru față de satisfacția
-                    clienților înseamnă că veți primi servicii fără egal pe tot parcursul procesului. Indiferent dacă
-                    aveți întrebări, aveți nevoie de asistență sau de suport pentru întreținere, echipa noastră dedicată
-                    este aici pentru a vă ajuta.</p>
-
-                <p>La <i>Racebox</i>, credem că conducerea ar trebui să fie o experiență, nu o corvoadă. De aceea oferim
-                    prețuri competitive și opțiuni flexibile de închiriere și finanțare, asigurându-vă că puteți porni
-                    la drum cu stil fără a vă rupe bugetul.</p>
-
-                <p>Experimentați bucuria drumului deschis cu <i>Racebox</i>, unde fiecare călătorie începe cu un clic.
-                    Alăturați-vă astăzi familiei <i>Racebox</i> și începeți să creați amintiri care vor dura o viață.
-                </p>
-
-                <p>Cu <i>Racebox</i>, nu suntem doar în afacerea de a furniza transport, suntem în afacerea de a crea
-                    experiențe de neuitat. Fie că plecați într-o excursie cu prietenii, explorați noi destinații sau pur
-                    și simplu vă bucurați de plăcerea de a conduce, <i>Racebox</i> este partenerul dvs. de încredere pe
-                    fiecare
-                    milă de drum.</p>
-
-                <h3>De ce <abbr title="Racebox">RB</abbr>?</h3>
-
-                <p>Dedicația noastră față de excelență se extinde dincolo de a oferi doar o selecție largă de vehicule.
-                    Ne străduim să facem întreaga dvs. călătorie cu <i>Racebox</i> cât mai fără probleme și plăcută
-                    posibil. De
-                    la momentul în care rezervați sau achiziționați vehiculul până în momentul în care îl returnați,
-                    echipa noastră este angajată să vă asigure satisfacția.</p>
-
-                <p>Și nu se oprește aici. La <i>Racebox</i>, suntem pasionați să dăm înapoi comunității noastre și
-                    mediului
-                    înconjurător. De aceea, explorăm constant modalități inovatoare de a reduce amprenta noastră de
-                    carbon și de a susține practici durabile în industria auto.</p>
-
-                <p>Deci de ce să mai așteptați? Experimentați diferența <i>Racebox</i> astăzi. Fie că căutați o aventură
-                    de
-                    weekend sau următorul dvs. vehicul de zi cu zi, avem soluția perfectă pentru dvs. Alăturați-vă
-                    familiei <i>Racebox</i> și să pornim împreună la drum!</p>
+                <p><b>Experiență Ușoară de Cumpărături</b> <br> Interfața noastră simplă și intuitivă vă permite să
+                    explorați
+                    și să găsiți produsele dorite cu ușurință. Fiți siguri că veți găsi tot ce aveți nevoie pentru a vă
+                    satisface pasiunea pentru automobile.</p>
+                <p><b>Serviciul Clietului de Încredere</b> <br> Echipa noastră dedicată de asistență clienți este
+                    întotdeauna
+                    aici pentru a vă oferi ajutorul și suportul necesar. De la recomandări de produse până la asistență
+                    post-vânzare, suntem aici pentru dumneavoastră.</p>
+                <a href="./resurse/imagini/name.jpg" download="oferta.jpg">Descarcă oferta noastră</a>
             </section>
-        </section>
+            <section class="section-3">
+                <h2>Program de lucru <i class="fa-solid fa-clock fa-fade"></i></h2>
+                <table class="section-3-program">
+                    <thead>
+                        <tr>
+                            <th>Zi</th>
+                            <th>Dimineața</th>
+                            <th>Pauză de masă</th>
+                            <th>Seara</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="5">Zile<br>Lucrătoare</td>
+                            <td>Luni</td>
+                            <td>10:00 - 12:00</td>
+                            <td>12:00 - 14:00</td>
+                            <td>14:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Marti</td>
+                            <td>09:00 - 12:00</td>
+                            <td>12:00 - 14:00</td>
+                            <td>14:00 - 21:00</td>
+                        </tr>
+                        <tr>
+                            <td>Miercuri</td>
+                            <td>09:00 - 11:00</td>
+                            <td>11:00 - 13:00</td>
+                            <td>14:00 - 21:00</td>
+                        </tr>
+                        <tr>
+                            <td>Joi</td>
+                            <td>09:00 - 11:00</td>
+                            <td>11:00 - 13:00</td>
+                            <td>14:00 - 21:00</td>
+                        </tr>
+                        <tr>
+                            <td>Vineri</td>
+                            <td>09:00 - 12:00</td>
+                            <td>12:00 - 14:00</td>
+                            <td>14:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Weekend</td>
+                            <td>Sâmbătă</td>
+                            <td>10:00 - 12:00</td>
+                            <td>12:00 - 13:00</td>
+                            <td>13:00 - 16:00</td>
+                        </tr>
+                        <tr>
+                            <td>Duminică</td>
+                            <td>10:00 - 14:00</td>
+                            <td>-</td>
+                            <td>Închis</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Închis cu ocazia sărbătorilor legale.</td>
+                        </tr>
+                    </tfoot>
+                </table>
 
-
-        <section class="section-3" id="#oferte">
-            <section class="section-3-left">
-                <figure>
-                    <img src="resurse/imagini/name.jpg" alt="">
-                    <figcaption>Sediul Racebox București</figcaption>
-                </figure>
             </section>
+            <section class="section-4">
+                <div class="section-4-img">
+                    <img src="./resurse/imagini/2.jpg">
+                </div>
+                <div class="section-4-right">
+                    <h2>Ofertele noastre</h2>
+                    <p>Indiferent dacă ești în căutarea unor piese de schimb pentru a-ți întreține mașina sau dorești să
+                        îți personalizezi vehiculul pentru performanțe maxime pe șosea, Racebox este sursa ta de
+                        încredere pentru toate nevoile tale auto. Colaborăm cu cele mai renumite mărci din industrie
+                        pentru a asigura că fiecare produs oferit de noi este de cea mai înaltă calitate și se
+                        conformează standardelor de performanță pe care le cauți.</p>
+                </div>
+            </section>
+            <section class="section-5">
+                <h2>Ultimele clipuri</h2>
+                <div class="iframe-container">
+                    <div class="iframe-links">
+                        <a href="https://www.youtube.com/embed/Axpw1k-k8os?si=oUOfGZDWcx1iMCPw" target="ifr-video">Video
+                            1 </a>
+                        <a href="https://www.youtube.com/embed/g7zZCBz1TR0?si=pov2PaB0nmbAUSeu" target="ifr-video">Video
+                            2</a>
+                        <a href="https://www.youtube.com/embed/WJhWH-SeSCQ?si=FGqX1q0-46we9QJK" target="ifr-video">Video
+                            3</a>
+                    </div>
+                    <iframe name="ifr-video" width="560" height="315"
+                        src="https://www.youtube.com/embed/WJhWH-SeSCQ?si=FGqX1q0-46we9QJK" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+            <section class="section-6">
+                <h2>Întrebări frecvente</h2>
+                <div class="section-6-details">
+                    <details>
+                        <summary>Ce tipuri de produse oferiți?</summary>
+                        <p>Oferim o gamă largă de produse auto, inclusiv piese de schimb, accesorii, echipamente de
+                            performanță și multe altele. Indiferent de nevoile tale auto, avem ceva pentru tine!</p>
+                    </details>
 
-            <div class="section-3-right">
-                <h3 class="section-title section-underlined">PROFESIONALISM</h3>
+                    <details>
+                        <summary>Care sunt metodele de plată acceptate?</summary>
+                        <p>Acceptăm plăți prin card de credit/debit, PayPal și alte metode de plată populare, pentru a
+                            face cumpărăturile tale cât mai convenabile posibil.</p>
+                    </details>
 
-                <p>La RaceBox, înțelegem că nevoile tale de vehicule sunt la fel de unice ca și tine.</p>
+                    <details>
+                        <summary>Cât durează să primești produsele comandate?</summary>
+                        <p>Timpul de livrare variază în funcție de locația ta și de metoda de expediere selectată. De
+                            obicei, încercăm să livrăm comenzile cât mai rapid posibil, iar detalii suplimentare despre
+                            timpul de livrare sunt furnizate în momentul plasării comenzii.</p>
+                    </details>
 
-                <p class="section-link"><a href="resurse/imagini/name.jpg" download>DESCARCĂ OFERTELE</a></p>
-            </div>
-        </section>
+                    <details>
+                        <summary>Ce fac dacă am probleme cu un produs comandat?</summary>
+                        <p>Suntem aici pentru a te ajuta! Dacă întâmpini orice problemă cu un produs achiziționat de la
+                            noi, te rugăm să ne contactezi cât mai curând posibil, iar echipa noastră de asistență
+                            clienți va fi bucuroasă să te ajute să rezolvi problema.</p>
+                    </details>
 
+                    <details>
+                        <summary>Ofereți garanție pentru produsele voastre?</summary>
+                        <p>Da, majoritatea produselor noastre beneficiază de garanție. Detalii suplimentare despre
+                            garanție sunt specificate pe paginile produselor respective sau pot fi obținute prin
+                            contactarea echipei noastre de asistență clienți.</p>
+                    </details>
 
-        <!-- <div class="section-1-right">
-                <figure>
+                    <details>
+                        <summary>Pot returna un produs dacă nu sunt mulțumit de el?</summary>
+                        <p>Da, acceptăm returnările produselor în anumite condiții. Te rugăm să consulți politica
+                            noastră de returnare pentru detalii specifice și să ne contactezi pentru asistență
+                            suplimentară în acest sens.</p>
+                    </details>
+                </div>
 
-                    <picture>
-                        <source media="(max-width: 500px)" srcset="resurse/imagini/index-1.jpg">
-                        <source media="(max-width: 1000px)" srcset="resurse/imagini/index-1.jpg">
-                        <source srcset="resurse/imagini/index-1.jpg">
-                        <img src="resurse/imagini/index-1.jpg" alt="index-1">
-                    </picture>
-                    <figcaption>Imagine Racebox Bucuresti</figcaption>
-
-                </figure>
-            </div> -->
-
-        <div class="moving-text">
-            <div id="endless-text">
-                &nbsp;&nbsp;&nbsp;ROMÂNIA &nbsp;&nbsp;&nbsp; NORVEGIA &nbsp;&nbsp;&nbsp; COREEA DE SUD
-                &nbsp;&nbsp;&nbsp; SPANIA
-                &nbsp;&nbsp;&nbsp;KENYA &nbsp;&nbsp;&nbsp;ITALIA &nbsp;&nbsp;&nbsp; CHILE &nbsp;&nbsp;&nbsp; VIETNAM
-                &nbsp;&nbsp;&nbsp; SUEDIA &nbsp;&nbsp;&nbsp; FRANȚA &nbsp;&nbsp;&nbsp;ELVEȚIA &nbsp;&nbsp;&nbsp;
-                BRAZILIA &nbsp;&nbsp;&nbsp; ARGENTINA &nbsp;&nbsp;&nbsp; EGIPT
-            </div>
+            </section>
         </div>
-
-        <section class="section-2">
-            <h2 class="section-title">ULTIMELE CLIPURI</h2>
-
-            <!-- <li><a href="https://www.youtube.com/watch?v=WJhWH-SeSCQ&pp=ygUHcmFjZWJveA%3D%3D"
-                        target="iframe_content">Video 1</a></li>
-                <li><a href="https://www.youtube.com/watch?v=Axpw1k-k8os&pp=ygUaYW5keSBwb3Blc2N1IGFuZHJlaSBlbmVzY3U%3D"
-                     target="iframe_content">Video 2</a></li> -->
-
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Axpw1k-k8os?si=oUOfGZDWcx1iMCPw"
-                title="YouTube video player" style="border: none;"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/g7zZCBz1TR0?si=pov2PaB0nmbAUSeu"
-                title="YouTube video player" style="border: none;"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </section>
     </main>
 
     <footer class="footer" id="footer-id">
@@ -243,37 +265,14 @@
         <div class="footer-right">
             <div class="footer-nav">
                 <ul>
-                    <li><a href="#">Home</a>
-                        <ul>
-                            <li><a href="index.html">Categories</a>
-                            <li><a href="index.html">Top Ratings</a>
-                            <li><a href="#footer-id">Footer</a>
-                        </ul>
-                    </li>
-                    <li><a href="vanzari.html">Buy a car</a></li>
-                    <li><a href="inchirieri.html">Rent a car</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="vanzari.html">Cumpără</a></li>
+                    <li><a href="inchirieri.html">Închiriază</a></li>
                     <li> <a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </footer>
-
-
-    <script>
-        let mybutton = document.getElementById("top-btn");
-        window.onscroll = function () { scrollFunction() };
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
 
 
 </body>

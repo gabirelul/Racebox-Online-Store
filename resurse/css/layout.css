@@ -1,0 +1,74 @@
+:root {
+    /* Colors */
+    --red: #d52b1e;
+    --yellow: #fed100;
+    --dark: #1c1c1c;
+    --white: #fff;
+    --black: #000;
+    --secondaryGrey: #4f4f4f;
+    --lightGrey: #e8e9eb;
+}
+
+main {
+    padding: 0 6em;
+}
+
+.grid-pagina {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "section-1 section-1 section-1"
+        "section-2 section-2 section-3"
+        "section-2 section-2 section-3"
+        "section-4 section-4 section-4"
+        "section-5 section-6 section-6"
+        "section-5 section-6 section-6";
+}
+
+.grid-pagina>* {
+    border: 2px solid var(--yellow);
+}
+
+.section-1 {
+    grid-area: section-1;
+}
+
+.section-2 {
+    grid-area: section-2;
+}
+
+.section-3 {
+    grid-area: section-3;
+}
+
+.section-4 {
+    grid-area: section-4;
+}
+
+.section-5 {
+    grid-area: section-5;
+}
+
+.section-6 {
+    grid-area: section-6;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 0 3em;
+    }
+
+    .grid-pagina {
+        grid-gap: 1em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    main {
+        padding: 0 1em;
+    }
+
+    .grid-pagina {
+        grid-gap: .7em;
+    }
+}
