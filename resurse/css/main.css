@@ -108,6 +108,7 @@ html p {
     text-decoration: none;
     background-color: var(--secondaryGrey);
     display: flex;
+    
     align-items: center;
     justify-content: center;
 }
