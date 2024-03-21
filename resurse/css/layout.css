@@ -1,0 +1,66 @@
+:root {
+    /* Colors */
+    --red: #d52b1e;
+    --yellow: #fed100;
+    --blueDark: #283044;
+    --blueLight: #78A1BB;
+    --cream: #EBF5EE;
+
+    --dark: #1c1c1c;
+    --white: #fff;
+    --black: #000;
+    --secondaryGrey: #A9A9A9;
+    --lightGrey: #e8e9eb;
+}
+
+main {
+    padding: 0 6em;
+}
+
+.grid-pagina {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "section-1 section-1 section-1 section-1"
+        "section-5 section-6 section-6 section-7"
+        "section-3 section-3 section-2 section-2"
+        "section-4 section-4 section-2 section-2"
+        "section-8 section-8 section-8 section-8";
+}
+
+.grid-pagina>* {
+    border: 2px solid var(--yellow);
+}
+
+.section-1 {
+    grid-area: section-1;
+}
+
+.section-2 {
+    grid-area: section-2;
+}
+
+.section-3 {
+    grid-area: section-3;
+}
+
+.section-4 {
+    grid-area: section-4;
+}
+
+.section-5 {
+    grid-area: section-5;
+}
+
+.section-6 {
+    grid-area: section-6;
+}
+
+.section-7 {
+    grid-area: section-7;
+}
+
+.section-8 {
+    grid-area: section-8;
+}
