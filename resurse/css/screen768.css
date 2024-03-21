@@ -1,0 +1,19 @@
+html p {
+    font-size: 17px;
+    color: red;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+}
+
+.grid-pagina {
+    grid-gap: .5em;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.iframe-container iframe {
+    width: 70%;
+    height: auto;
+}

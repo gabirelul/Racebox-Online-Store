@@ -2,10 +2,14 @@
     /* Colors */
     --red: #d52b1e;
     --yellow: #fed100;
+    --blueDark: #283044;
+    --blueLight: #78A1BB;
+    --cream: #EBF5EE;
+
     --dark: #1c1c1c;
     --white: #fff;
     --black: #000;
-    --secondaryGrey: #4f4f4f;
+    --secondaryGrey: #A9A9A9;
     --lightGrey: #e8e9eb;
 }
 
@@ -16,13 +20,13 @@ main {
 .grid-pagina {
     display: grid;
     grid-gap: 2em;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "section-1 section-1 section-1"
-        "section-2 section-2 section-3"
-        "section-2 section-2 section-3"
-        "section-4 section-4 section-4"
-        "section-5 section-6 section-6"
-        "section-5 section-6 section-6";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "section-1 section-1 section-1 section-1"
+        "section-5 section-6 section-6 section-7"
+        "section-3 section-3 section-2 section-2"
+        "section-4 section-4 section-2 section-2"
+        "section-8 section-8 section-8 section-8";
 }
 
 .grid-pagina>* {
@@ -53,22 +57,10 @@ main {
     grid-area: section-6;
 }
 
-@media screen and (max-width: 768px) {
-    main {
-        padding: 0 3em;
-    }
-
-    .grid-pagina {
-        grid-gap: 1em;
-    }
+.section-7 {
+    grid-area: section-7;
 }
 
-@media screen and (max-width: 320px) {
-    main {
-        padding: 0 1em;
-    }
-
-    .grid-pagina {
-        grid-gap: .7em;
-    }
+.section-8 {
+    grid-area: section-8;
 }

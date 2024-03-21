@@ -11,9 +11,6 @@
     <meta name="author" content="Alex Chera">
     <title>Racebox</title>
 
-    <link rel="stylesheet" href="resurse/css/main.css">
-    <link rel="stylesheet" href="resurse/css/layout.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./resurse/favicon/apple-touch-icon.png">
@@ -26,13 +23,14 @@
     <meta name="msapplication-config" content="./resurse/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="resurse/css/main.css">
+    <link rel="stylesheet" href="resurse/css/layout.css">
+    <link rel="stylesheet" href="resurse/css/screen1200.css" type="text/css" media="screen and (max-width:1200px)" />
+    <link rel="stylesheet" href="resurse/css/screen768.css" type="text/css" media="screen and (max-width:768px)" />
+    <link rel="stylesheet" href="resurse/css/screen320.css" type="text/css" media="screen and (max-width:320px)" />
 </head>
 
 <body>
-
-    <!-- <buttonid="top-btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button> -->
-
-    <a href="#" id="link-top"><div id="triunghi"></div></a>
 
     <header>
         <nav class="navbar">
@@ -48,16 +46,20 @@
                             <li class="drop-li"><a href="#footer-id">Footer</a>
                         </ul>
                     </li>
-                    <li class="nav-li underlined"><a href="cumpara.html">Cumpără</a></li>
+                    <li class="nav-li underlined"><a href="cumpara.html">Cumpără</a>
+                        <ul class="dropdown">
+                            <li class="drop-li"><a href="#servicii">Cumpara 1</a>
+                            <li class="drop-li"><a href="#oferte">Cumpara 2</a>
+                            <li class="drop-li"><a href="#footer-id">Cumpara 3</a>
+                        </ul>
+                    </li>
                     <li class="nav-li underlined"><a href="inchirieri.html">Închiriază</a></li>
                     <li class="nav-li underlined"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-
     <main>
-
         <div class="grid-pagina">
             <section class="section-1">
                 <div class="section-1-left">
@@ -73,7 +75,20 @@
                     <img src="./resurse/imagini/1.jpg">
                 </div>
             </section>
-            <section class="section-2">
+            <section class="section-5">
+                <h2>Section</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ad expedita corrupti quis, asperiores atque, tempora, quo veniam suscipit molestias quisquam provident eligendi distinctio nisi incidunt voluptatibus ducimus repudiandae placeat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque culpa eaque veritatis quis, ea voluptas cum magni temporibus, vitae, quae odio provident accusantium quam. Sint qui voluptatem distinctio minus quidem?
+                Quae quam delectus explicabo, itaque aperiam neque, possimus, sapiente sequi doloribus minus dolor. Maiores voluptate et odit facilis in quam, fugit minima ut eveniet, magnam enim quidem eum alias veritatis?
+                Culpa incidunt fugiat cupiditate sint magni ab sequi officia. Eaque enim voluptates nihil, nulla blanditiis aperiam fugit libero exercitationem quod ab repellat error incidunt molestias eligendi corporis at doloremque ex.</p>
+            </section>
+            <section class="section-6">
+                <h2>Section</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque culpa eaque veritatis quis, ea voluptas cum magni temporibus, vitae, quae odio provident accusantium quam. Sint qui voluptatem distinctio minus quidem?
+                    Quae quam delectus explicabo, itaque aperiam neque, possimus, sapiente sequi doloribus minus dolor. Maiores voluptate et odit facilis in quam, fugit minima ut eveniet, magnam enim quidem eum alias veritatis?
+                    Culpa incidunt fugiat cupiditate sint magni ab sequi officia. Eaque enim voluptates nihil, nulla blanditiis aperiam fugit libero exercitationem quod ab repellat error incidunt molestias eligendi corporis at doloremque ex.</p>
+            </section>
+            <section class="section-7">
                 <h2><strong>Ce ne deosebește?</strong></h2>
                 <p> <b>Produse Premium</b> <br> Colaborăm doar cu cele mai renumite mărci din industria auto pentru a vă
                     asigura că fiecare produs pe care îl găsiți la Racebox este de cea mai înaltă calitate.</p>
@@ -93,10 +108,72 @@
                 <a href="./resurse/imagini/name.jpg" download="oferta.jpg">Descarcă oferta noastră</a>
             </section>
             <section class="section-3">
+                <h2>Întrebări frecvente</h2>
+                <div class="section-3-details">
+                    <details>
+                        <summary>Ce tipuri de produse oferiți?</summary>
+                        <p>Oferim o gamă largă de produse auto, inclusiv piese de schimb, accesorii, echipamente de
+                            performanță și multe altele. Indiferent de nevoile tale auto, avem ceva pentru tine!</p>
+                    </details>
+
+                    <details>
+                        <summary>Care sunt metodele de plată acceptate?</summary>
+                        <p>Acceptăm plăți prin card de credit/debit, PayPal și alte metode de plată populare, pentru a
+                            face cumpărăturile tale cât mai convenabile posibil.</p>
+                    </details>
+
+                    <details>
+                        <summary>Cât durează să primești produsele comandate?</summary>
+                        <p>Timpul de livrare variază în funcție de locația ta și de metoda de expediere selectată. De
+                            obicei, încercăm să livrăm comenzile cât mai rapid posibil, iar detalii suplimentare despre
+                            timpul de livrare sunt furnizate în momentul plasării comenzii.</p>
+                    </details>
+
+                    <details>
+                        <summary>Ce fac dacă am probleme cu un produs comandat?</summary>
+                        <p>Suntem aici pentru a te ajuta! Dacă întâmpini orice problemă cu un produs achiziționat de la
+                            noi, te rugăm să ne contactezi cât mai curând posibil, iar echipa noastră de asistență
+                            clienți va fi bucuroasă să te ajute să rezolvi problema.</p>
+                    </details>
+
+                    <details>
+                        <summary>Ofereți garanție pentru produsele voastre?</summary>
+                        <p>Da, majoritatea produselor noastre beneficiază de garanție. Detalii suplimentare despre
+                            garanție sunt specificate pe paginile produselor respective sau pot fi obținute prin
+                            contactarea echipei noastre de asistență clienți.</p>
+                    </details>
+
+                    <details>
+                        <summary>Pot returna un produs dacă nu sunt mulțumit de el?</summary>
+                        <p>Da, acceptăm returnările produselor în anumite condiții. Te rugăm să consulți politica
+                            noastră de returnare pentru detalii specifice și să ne contactezi pentru asistență
+                            suplimentară în acest sens.</p>
+                    </details>
+                </div>
+            </section>
+            <section class="section-4">
+                <h2>Ultimele clipuri</h2>
+                <div class="iframe-container">
+                    <div class="iframe-links">
+                        <a href="https://www.youtube.com/embed/Axpw1k-k8os?si=oUOfGZDWcx1iMCPw" target="ifr-video">Video
+                            1 </a>
+                        <a href="https://www.youtube.com/embed/g7zZCBz1TR0?si=pov2PaB0nmbAUSeu" target="ifr-video">Video
+                            2</a>
+                        <a href="https://www.youtube.com/embed/WJhWH-SeSCQ?si=FGqX1q0-46we9QJK" target="ifr-video">Video
+                            3</a>
+                    </div>
+                    <iframe name="ifr-video" width="560" height="315"
+                        src="https://www.youtube.com/embed/WJhWH-SeSCQ?si=FGqX1q0-46we9QJK" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+            <section class="section-2">
                 <h2>Program de lucru <i class="fa-solid fa-clock fa-fade"></i></h2>
-                <table class="section-3-program">
+                <table class="section-2-program">
                     <thead>
                         <tr>
+                            <th>Tip</th>
                             <th>Zi</th>
                             <th>Dimineața</th>
                             <th>Pauză de masă</th>
@@ -109,7 +186,7 @@
                             <td>Luni</td>
                             <td>10:00 - 12:00</td>
                             <td>12:00 - 14:00</td>
-                            <td>14:00 - 20:00</td>
+                            <td>14:00 - 21:00</td>
                         </tr>
                         <tr>
                             <td>Marti</td>
@@ -151,17 +228,16 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="4">Închis cu ocazia sărbătorilor legale.</td>
+                            <td colspan="5">Închis cu ocazia sărbătorilor legale.</td>
                         </tr>
                     </tfoot>
                 </table>
-
             </section>
-            <section class="section-4">
-                <div class="section-4-img">
+            <section class="section-8">
+                <div class="section-8-img">
                     <img src="./resurse/imagini/2.jpg">
                 </div>
-                <div class="section-4-right">
+                <div class="section-8-right">
                     <h2>Ofertele noastre</h2>
                     <p>Indiferent dacă ești în căutarea unor piese de schimb pentru a-ți întreține mașina sau dorești să
                         îți personalizezi vehiculul pentru performanțe maxime pe șosea, Racebox este sursa ta de
@@ -170,70 +246,14 @@
                         conformează standardelor de performanță pe care le cauți.</p>
                 </div>
             </section>
-            <section class="section-5">
-                <h2>Ultimele clipuri</h2>
-                <div class="iframe-container">
-                    <div class="iframe-links">
-                        <a href="https://www.youtube.com/embed/Axpw1k-k8os?si=oUOfGZDWcx1iMCPw" target="ifr-video">Video
-                            1 </a>
-                        <a href="https://www.youtube.com/embed/g7zZCBz1TR0?si=pov2PaB0nmbAUSeu" target="ifr-video">Video
-                            2</a>
-                        <a href="https://www.youtube.com/embed/WJhWH-SeSCQ?si=FGqX1q0-46we9QJK" target="ifr-video">Video
-                            3</a>
-                    </div>
-                    <iframe name="ifr-video" width="560" height="315"
-                        src="https://www.youtube.com/embed/WJhWH-SeSCQ?si=FGqX1q0-46we9QJK" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-            </section>
-            <section class="section-6">
-                <h2>Întrebări frecvente</h2>
-                <div class="section-6-details">
-                    <details>
-                        <summary>Ce tipuri de produse oferiți?</summary>
-                        <p>Oferim o gamă largă de produse auto, inclusiv piese de schimb, accesorii, echipamente de
-                            performanță și multe altele. Indiferent de nevoile tale auto, avem ceva pentru tine!</p>
-                    </details>
-
-                    <details>
-                        <summary>Care sunt metodele de plată acceptate?</summary>
-                        <p>Acceptăm plăți prin card de credit/debit, PayPal și alte metode de plată populare, pentru a
-                            face cumpărăturile tale cât mai convenabile posibil.</p>
-                    </details>
-
-                    <details>
-                        <summary>Cât durează să primești produsele comandate?</summary>
-                        <p>Timpul de livrare variază în funcție de locația ta și de metoda de expediere selectată. De
-                            obicei, încercăm să livrăm comenzile cât mai rapid posibil, iar detalii suplimentare despre
-                            timpul de livrare sunt furnizate în momentul plasării comenzii.</p>
-                    </details>
-
-                    <details>
-                        <summary>Ce fac dacă am probleme cu un produs comandat?</summary>
-                        <p>Suntem aici pentru a te ajuta! Dacă întâmpini orice problemă cu un produs achiziționat de la
-                            noi, te rugăm să ne contactezi cât mai curând posibil, iar echipa noastră de asistență
-                            clienți va fi bucuroasă să te ajute să rezolvi problema.</p>
-                    </details>
-
-                    <details>
-                        <summary>Ofereți garanție pentru produsele voastre?</summary>
-                        <p>Da, majoritatea produselor noastre beneficiază de garanție. Detalii suplimentare despre
-                            garanție sunt specificate pe paginile produselor respective sau pot fi obținute prin
-                            contactarea echipei noastre de asistență clienți.</p>
-                    </details>
-
-                    <details>
-                        <summary>Pot returna un produs dacă nu sunt mulțumit de el?</summary>
-                        <p>Da, acceptăm returnările produselor în anumite condiții. Te rugăm să consulți politica
-                            noastră de returnare pentru detalii specifice și să ne contactezi pentru asistență
-                            suplimentară în acest sens.</p>
-                    </details>
-                </div>
-
-            </section>
         </div>
     </main>
+
+    <a href="#" id="buton-top">
+        <div id="triunghi">
+            <p>&#5123;</p>
+        </div>
+    </a>
 
     <footer class="footer" id="footer-id">
         <div class="footer-left">
@@ -255,11 +275,6 @@
                 <a class="address-hover" href="https://mail.google.com/mail/u/0/" target="_blank">racebox@gmail.com</a>
                 <a class="address-hover" href="https://wa.me/0720100800" target="_blank"><u>Deschide Whatsapp</u></a>
             </address>
-            <p class="footer-text-under" style="padding: 1em 0 0;">Abonează-te la <i>newsletter</i></p>
-            <form>
-                <input type="email" name="emailField" id="email-field" required>
-                <input type="submit" id="submit-btn" value="Submit">
-            </form>
         </div>
 
         <div class="footer-right">
