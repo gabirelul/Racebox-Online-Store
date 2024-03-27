@@ -32,3 +32,13 @@ main {
     width: 60%;
     height: auto;
 }
+
+
+.section-2-program {
+    font-size: 12px; /* Further decrease the font size */
+}
+
+.section-2-program th,
+.section-2-program td {
+    padding: 3px; /* Further decrease the padding */
+}

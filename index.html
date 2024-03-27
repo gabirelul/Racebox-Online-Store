@@ -25,40 +25,46 @@
 
     <link rel="stylesheet" href="resurse/css/main.css">
     <link rel="stylesheet" href="resurse/css/layout.css">
-    <link rel="stylesheet" href="resurse/css/screen1200.css" type="text/css" media="screen and (max-width:1200px)" />
-    <link rel="stylesheet" href="resurse/css/screen768.css" type="text/css" media="screen and (max-width:768px)" />
-    <link rel="stylesheet" href="resurse/css/screen320.css" type="text/css" media="screen and (max-width:320px)" />
+    <link rel="stylesheet" href="resurse/css/screen1200.css" type="text/css" media="screen and (max-width:1200px)">
+    <link rel="stylesheet" href="resurse/css/screen768.css" type="text/css" media="screen and (max-width:768px)">
+    <link rel="stylesheet" href="resurse/css/screen320.css" type="text/css" media="screen and (max-width:320px)">
+    <link rel="stylesheet" href="resurse/css/main.scss">
 </head>
 
 <body>
 
     <header>
         <nav class="navbar">
-            <div class="nav-left">
-                <a href="index.html" class="nav-left-btn">Racebox București</a>
-            </div>
-            <div class="nav-right">
-                <ul class="nav-ul">
-                    <li class="nav-li underlined"><a href="index.html">Acasă</a>
-                        <ul class="dropdown">
-                            <li class="drop-li"><a href="#servicii">Servicii</a>
-                            <li class="drop-li"><a href="#oferte">Oferte</a>
-                            <li class="drop-li"><a href="#footer-id">Footer</a>
-                        </ul>
-                    </li>
-                    <li class="nav-li underlined"><a href="cumpara.html">Cumpără</a>
-                        <ul class="dropdown">
-                            <li class="drop-li"><a href="#servicii">Cumpara 1</a>
-                            <li class="drop-li"><a href="#oferte">Cumpara 2</a>
-                            <li class="drop-li"><a href="#footer-id">Cumpara 3</a>
-                        </ul>
-                    </li>
-                    <li class="nav-li underlined"><a href="inchirieri.html">Închiriază</a></li>
-                    <li class="nav-li underlined"><a href="contact.html">Contact</a></li>
-                </ul>
+            <ul class="nav-ul">
+                <li><a href="index.html">
+                        <i class="fa-solid fa-house"></i>&nbsp; Acasă</a>
+                </li>
+                <li><a href="#">
+                        Cumpara
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="#">Section</a></li>
+                        <li><a href="#">Section</a></li>
+                        <li><a href="#">Section</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Închiriază</a></li>
+                <li><a href="#">Contact</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="hamburger" onclick="myFunction()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
         </nav>
     </header>
+
     <main>
         <div class="grid-pagina">
             <section class="section-1">
@@ -77,16 +83,30 @@
             </section>
             <section class="section-5">
                 <h2>Section</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ad expedita corrupti quis, asperiores atque, tempora, quo veniam suscipit molestias quisquam provident eligendi distinctio nisi incidunt voluptatibus ducimus repudiandae placeat.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque culpa eaque veritatis quis, ea voluptas cum magni temporibus, vitae, quae odio provident accusantium quam. Sint qui voluptatem distinctio minus quidem?
-                Quae quam delectus explicabo, itaque aperiam neque, possimus, sapiente sequi doloribus minus dolor. Maiores voluptate et odit facilis in quam, fugit minima ut eveniet, magnam enim quidem eum alias veritatis?
-                Culpa incidunt fugiat cupiditate sint magni ab sequi officia. Eaque enim voluptates nihil, nulla blanditiis aperiam fugit libero exercitationem quod ab repellat error incidunt molestias eligendi corporis at doloremque ex.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ad expedita corrupti quis,
+                    asperiores atque, tempora, quo veniam suscipit molestias quisquam provident eligendi distinctio nisi
+                    incidunt voluptatibus ducimus repudiandae placeat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque culpa eaque veritatis quis, ea
+                    voluptas cum magni temporibus, vitae, quae odio provident accusantium quam. Sint qui voluptatem
+                    distinctio minus quidem?
+                    Quae quam delectus explicabo, itaque aperiam neque, possimus, sapiente sequi doloribus minus dolor.
+                    Maiores voluptate et odit facilis in quam, fugit minima ut eveniet, magnam enim quidem eum alias
+                    veritatis?
+                    Culpa incidunt fugiat cupiditate sint magni ab sequi officia. Eaque enim voluptates nihil, nulla
+                    blanditiis aperiam fugit libero exercitationem quod ab repellat error incidunt molestias eligendi
+                    corporis at doloremque ex.</p>
             </section>
             <section class="section-6">
                 <h2>Section</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque culpa eaque veritatis quis, ea voluptas cum magni temporibus, vitae, quae odio provident accusantium quam. Sint qui voluptatem distinctio minus quidem?
-                    Quae quam delectus explicabo, itaque aperiam neque, possimus, sapiente sequi doloribus minus dolor. Maiores voluptate et odit facilis in quam, fugit minima ut eveniet, magnam enim quidem eum alias veritatis?
-                    Culpa incidunt fugiat cupiditate sint magni ab sequi officia. Eaque enim voluptates nihil, nulla blanditiis aperiam fugit libero exercitationem quod ab repellat error incidunt molestias eligendi corporis at doloremque ex.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque culpa eaque veritatis quis, ea
+                    voluptas cum magni temporibus, vitae, quae odio provident accusantium quam. Sint qui voluptatem
+                    distinctio minus quidem?
+                    Quae quam delectus explicabo, itaque aperiam neque, possimus, sapiente sequi doloribus minus dolor.
+                    Maiores voluptate et odit facilis in quam, fugit minima ut eveniet, magnam enim quidem eum alias
+                    veritatis?
+                    Culpa incidunt fugiat cupiditate sint magni ab sequi officia. Eaque enim voluptates nihil, nulla
+                    blanditiis aperiam fugit libero exercitationem quod ab repellat error incidunt molestias eligendi
+                    corporis at doloremque ex.</p>
             </section>
             <section class="section-7">
                 <h2><strong>Ce ne deosebește?</strong></h2>
@@ -249,7 +269,7 @@
         </div>
     </main>
 
-    <a href="#" id="buton-top">
+    <a href="#" id="buton-top" title="Racebox">
         <div id="triunghi">
             <p>&#5123;</p>
         </div>
@@ -289,7 +309,16 @@
         </div>
     </footer>
 
-
+    <script>
+        function myFunction() {
+            var x = document.querySelector(".nav-ul");
+            if (x.style.left === "-100%") {
+                x.style.left = "0";
+            } else {
+                x.style.left = "-100%";
+            }
+        }
+    </script>
 </body>
 
 </html>

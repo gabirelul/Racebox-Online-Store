@@ -1,3 +1,18 @@
+:root {
+    /* Colors */
+    --red: #d52b1e;
+    --yellow: #fed100;
+    --blueDark: #283044;
+    --blueLight: #78A1BB;
+    --cream: #EBF5EE;
+
+    --dark: #1c1c1c;
+    --white: #fff;
+    --black: #000;
+    --secondaryGrey: #A9A9A9;
+    --lightGrey: #e8e9eb;
+}
+
 html p {
     font-size: 17px;
     color: red;
@@ -5,7 +20,7 @@ html p {
 
 main {
     padding: 0;
-    margin: 0;
+    margin: 0 1em;
 }
 
 .grid-pagina {
@@ -16,4 +31,34 @@ main {
 .iframe-container iframe {
     width: 70%;
     height: auto;
+}
+
+.section-2-program {
+    font-size: 14px;
+    /* Decrease the font size */
+}
+
+.section-2-program th,
+.section-2-program td {
+    padding: 5px;
+    /* Decrease the padding */
+}
+
+/* --------- Navbar--------- */
+
+
+
+/* --------------- Sections --------------- */
+
+.section-1 {
+    flex-direction: column;
+}
+
+.section-1 img {
+    width: 50%;
+}
+
+/* --------------- Footer --------------- */
+.footer {
+    flex-direction: column;
 }
