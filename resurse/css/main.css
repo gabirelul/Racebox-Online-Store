@@ -152,7 +152,7 @@ section summary {
     font-weight: normal;
 }
 
-.section-1 {
+#section-1 {
     display: flex;
     justify-content: space-around;
 }
@@ -163,7 +163,7 @@ section summary {
     max-width: 30em;
 }
 
-.section-2 i {
+#section-2 i {
     font-size: 16px;
 }
 
@@ -355,136 +355,3 @@ section summary {
 }
 
 /* --------------------------- Navbar --------------------------- */
-.navbar {
-    display: flex;
-    align-items: center;
-    gap: 5em;
-    background-color: var(--dark);
-    /* position: fixed; */
-
-    ul.nav-ul {
-        display: flex;
-        /* background-color: var(--blueLight); */
-        gap: 1em;
-        list-style: none;
-        margin: 0;
-    }
-
-    ul.nav-ul li {
-        /* border: 1px solid #fff; */
-        position: relative;
-        list-style: none;
-    }
-
-    ul li {
-        padding: 1em 2em;
-        /* background-color: var(--secondaryGrey); */
-        text-align: center;
-
-    }
-
-    ul li a {
-        font-size: 18px;
-        display: block;
-        cursor: pointer;
-        transition: 1s ease-in-out;
-        text-decoration: none;
-        color: var(--white);
-        font-family: var(--regularFont);
-
-    }
-
-    ul.nav-ul li:hover a {
-        transform: scale(1.2);
-    }
-
-    ul li ul {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-    }
-
-
-    ul li:hover ul {
-        display: block;
-        margin: 0;
-        padding: 0;
-
-        background-color: var(--dark);
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    .bar {
-        width: 25px;
-        height: 3px;
-        background-color: var(--white);
-        margin: 5px 0;
-    }
-
-    ul li ul li::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        height: 0;
-        width: 15px;
-        background: linear-gradient(to right, var(--white) 0%, var(--dark) 100%);
-        transition: height 1s ease;
-    }
-
-    ul li ul li::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        height: 0;
-        width: 15px;
-        background: linear-gradient(to left, var(--white) 0%, var(--dark) 100%);
-        transition: height 1s ease;
-    }
-
-    ul li ul li::before {
-        left: 0;
-    }
-
-    ul li ul li::after {
-        right: 0;
-    }
-
-    ul li ul li:hover::before,
-    ul li ul li:hover::after {
-        height: 100%;
-    }
-}
-
-
-@media screen and (max-width: 768px) {
-    .nav-ul {
-        display: none;
-        border: 2px solid #fff;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: auto;
-        background-color: var(--blueDark);
-        padding: 5em 0 0 0;
-        transition: left 0.5s ease;
-    }
-
-    ul li ul {
-        position: fixed;
-    }
-
-
-    .navbar .hamburger {
-        display: block;
-        z-index: 200;
-    }
-}

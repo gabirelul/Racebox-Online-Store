@@ -1,0 +1,88 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 5em;
+  background-color: var(--dark);
+  /* position: fixed; */
+}
+.navbar ul.nav-ul {
+  display: flex;
+  /* background-color: var(--blueLight); */
+  gap: 1em;
+  list-style: none;
+  margin: 0;
+}
+.navbar ul.nav-ul li {
+  /* border: 1px solid #fff; */
+  position: relative;
+  list-style: none;
+}
+.navbar ul li {
+  padding: 1em 2em;
+  /* background-color: var(--secondaryGrey); */
+  text-align: center;
+}
+.navbar ul li a {
+  font-size: 18px;
+  display: block;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--regularFont);
+}
+.navbar ul.nav-ul li:hover a {
+  transform: scale(1.2);
+}
+.navbar ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+.navbar ul li:hover ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark);
+}
+.navbar .hamburger {
+  display: none;
+}
+.navbar .bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--white);
+  margin: 5px 0;
+}
+.navbar ul li ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 15px;
+  background: linear-gradient(to right, var(--white) 0%, var(--dark) 100%);
+  transition: height 1s ease;
+}
+.navbar ul li ul li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 15px;
+  background: linear-gradient(to left, var(--white) 0%, var(--dark) 100%);
+  transition: height 1s ease;
+}
+.navbar ul li ul li::before {
+  left: 0;
+}
+.navbar ul li ul li::after {
+  right: 0;
+}
+.navbar ul li ul li:hover::before,
+.navbar ul li ul li:hover::after {
+  height: 100%;
+}
+
+/*# sourceMappingURL=nav-test.css.map */
